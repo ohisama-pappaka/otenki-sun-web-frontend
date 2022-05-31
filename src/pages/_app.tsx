@@ -1,5 +1,12 @@
-const App = ({ Component, pageProps }) => {
-  return <Component {...pageProps} />;
+import { NextPage } from "next";
+import type { AppProps } from "next/app";
+
+const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => {
+  return (
+    <>
+      <Component {...pageProps} />
+    </>
+  );
 };
 
-export default App;
+export default MyApp;
