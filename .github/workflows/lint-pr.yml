@@ -1,5 +1,4 @@
 name: "Lint PR"
-
 on: [push]
   pull_request_target:
     types:
