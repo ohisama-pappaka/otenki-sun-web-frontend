@@ -17,7 +17,14 @@ export const DailyWeatherCard = ({
   minTemperature,
 }: Props) => {
   return (
-    <Box w="200px" borderRadius="md" borderWidth="2px" textAlign="center">
+    <Box
+      w="200px"
+      bg="white"
+      borderColor="gray.200"
+      borderRadius="md"
+      borderWidth="2px"
+      textAlign="center"
+    >
       <VSpacer size={2} />
       <Text fontSize="xl">{weather}</Text>
       <VSpacer size={2} />
