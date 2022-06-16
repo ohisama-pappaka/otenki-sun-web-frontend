@@ -33,12 +33,12 @@ export const SelectButton = ({ selectType }: Props) => {
   }
 
   return (
-    <Box w={100} color="blue.400">
-      <HStack>
-        <Icon as={iconPath} />
-        <Box>
-          <Text fontSize="xs">{title}</Text>
-        </Box>
+    <Box color="blue.400">
+      <HStack w="100%" spacing="0">
+        <Icon as={iconPath} w="20%" />
+        <Text w="80%" fontSize="xs">
+          {title}
+        </Text>
       </HStack>
     </Box>
   );
