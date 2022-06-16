@@ -3,7 +3,7 @@ import { CommonSelect } from "./index";
 
 export default {
   component: CommonSelect,
-  title: "tutorial/CommonSelect",
+  title: "common/CommonSelect",
   parameters: {
     backgrounds: {
       default: "dark",
