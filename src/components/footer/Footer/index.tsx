@@ -3,10 +3,7 @@ import { HStack } from "@chakra-ui/react";
 import { SelectButton } from "../SelectButton/index";
 // FIXME: 絶対パスで指定するとうまくいかない
 // import { SelectButton } from "@/components/footer/SelectButton/index";
-
-type FooterSelectButtonType = {
-  selectType: "POINT_REGI" | "DATE_REGI" | "OTHERS";
-};
+import { FooterSelectButtonType } from "@/types/type";
 
 export const Footer = () => {
   const selectButtonList: FooterSelectButtonType[] = [

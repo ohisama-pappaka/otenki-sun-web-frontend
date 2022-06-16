@@ -6,11 +6,9 @@ import { BsCheck } from "react-icons/bs";
 import { AiFillQuestionCircle } from "react-icons/ai";
 import { IconType } from "react-icons/lib";
 
-type Props = {
-  selectType: "POINT_REGI" | "DATE_REGI" | "OTHERS";
-};
+import { FooterSelectButtonType } from "@/types/type";
 
-export const SelectButton = ({ selectType }: Props) => {
+export const SelectButton = ({ selectType }: FooterSelectButtonType) => {
   // 使用されることは無いが iconPath の null を避けるための初期値
   let iconPath: IconType = AiFillQuestionCircle;
   let title = "NO DATA";
