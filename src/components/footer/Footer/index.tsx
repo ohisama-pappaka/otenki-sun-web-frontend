@@ -16,7 +16,7 @@ export const Footer = () => {
   ];
 
   return (
-    <HStack h="10" pl="4" bg="blue.100">
+    <HStack h="10" justifyContent="center" bg="blue.100">
       {selectButtonList.map((selectButton) => {
         return (
           <SelectButton
