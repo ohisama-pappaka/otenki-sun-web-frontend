@@ -22,16 +22,20 @@ jobs:
             fix
             feat
             docs
+
           # Configure which scopes are allowed.
-          scopes: |
-            core
-            ui
+          # scopes: |
+          #   core
+          #   ui
+
           # Configure that a scope must always be provided.
-          requireScope: true
+          requireScope: false
+
           # Configure which scopes are disallowed in PR titles. For instance by setting
           # the value below, `chore(release): ...` and `ci(e2e,release): ...` will be rejected.
           disallowScopes: |
             release
+
           # Configure additional validation for the subject based on a regex.
           # This example ensures the subject doesn't start with an uppercase character.
           subjectPattern: ^(?![A-Z]).+$
