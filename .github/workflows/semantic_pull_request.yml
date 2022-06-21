@@ -33,12 +33,13 @@ jobs:
 
           # Configure which scopes are disallowed in PR titles. For instance by setting
           # the value below, `chore(release): ...` and `ci(e2e,release): ...` will be rejected.
-          disallowScopes: |
-            release
+          # disallowScopes: |
+          #   release
 
           # Configure additional validation for the subject based on a regex.
           # This example ensures the subject doesn't start with an uppercase character.
-          subjectPattern: ^(?![A-Z]).+$
+          # subjectPattern: ^(?![A-Z]).+$
+
           # If `subjectPattern` is configured, you can use this property to override
           # the default error message that is shown when the pattern doesn't match.
           # The variables `subject` and `title` can be used within the message.
