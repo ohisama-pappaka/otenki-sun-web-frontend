@@ -46,8 +46,10 @@ jobs:
             The subject "{subject}" found in the pull request title "{title}"
             didn't match the configured pattern. Please ensure that the subject
             doesn't start with an uppercase character.
+
           # If you use GitHub Enterprise, you can set this to the URL of your server
-          githubBaseUrl: https://github.myorg.com/api/v3
+          # githubBaseUrl: https://github.myorg.com/api/v3
+
           # If the PR contains one of these labels, the validation is skipped.
           # Multiple labels can be separated by newlines.
           # If you want to rerun the validation when labels change, you might want
@@ -55,6 +57,7 @@ jobs:
           ignoreLabels: |
             bot
             ignore-semantic-pull-request
+
           # If you're using a format for the PR title that differs from the traditional Conventional
           # Commits spec, you can use these options to customize the parsing of the type, scope and
           # subject. The `headerPattern` should contain a regex where the capturing groups in parentheses
