@@ -18,15 +18,15 @@ jobs:
         with:
           # Configure which types are allowed.
           # Default: https://github.com/commitizen/conventional-commit-types
-          types: |
-            fix
-            feat
-            docs
+          # types: |
+          #   fix
+          #   feat
+          #   docs
 
           # Configure which scopes are allowed.
-          scopes: |
-            core
-            ui
+          # scopes: |
+          #   core
+          #   ui
 
           # Configure that a scope must always be provided.
           requireScope: false
