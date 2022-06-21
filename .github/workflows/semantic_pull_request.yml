@@ -24,9 +24,9 @@ jobs:
             docs
 
           # Configure which scopes are allowed.
-          # scopes: |
-          #   core
-          #   ui
+          scopes: |
+            core
+            ui
 
           # Configure that a scope must always be provided.
           requireScope: false
