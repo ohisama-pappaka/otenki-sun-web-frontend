@@ -1,7 +1,9 @@
 import React from "react";
 import { Box, Text, Image } from "@chakra-ui/react";
 
-import { VSpacer } from "../common/Spacer/VSpacer";
+import { VSpacer } from "../../common/Spacer/VSpacer/index";
+// FIXME: 絶対パスで指定ができない
+// import { VSpacer } from "@/components/common/Spacer/VSpacer/index";
 
 type Props = {
   weather: string;

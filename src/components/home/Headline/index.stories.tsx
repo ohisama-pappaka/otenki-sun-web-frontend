@@ -1,5 +1,5 @@
 import type { Meta, Story } from "@storybook/react/types-6-0";
-import { Headline } from "./headline";
+import { Headline } from "./index";
 
 export default {
   component: Headline,
