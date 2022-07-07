@@ -1,4 +1,5 @@
 import React from "react";
+import { useRouter } from "next/router";
 import { Box, HStack, Icon, Text } from "@chakra-ui/react";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { MdDateRange } from "react-icons/md";
@@ -9,6 +10,8 @@ import { IconType } from "react-icons/lib";
 import { FooterSelectButtonType } from "@/types/type";
 
 export const SelectButton = ({ selectType }: FooterSelectButtonType) => {
+  const router = useRouter();
+
   // 使用されることは無いが iconPath の null を避けるための初期値
   let iconPath: IconType = AiFillQuestionCircle;
   let title = "NO DATA";
@@ -30,9 +33,19 @@ export const SelectButton = ({ selectType }: FooterSelectButtonType) => {
       break;
   }
 
+  const handleClick = () => {
+    if (selectType === "POINT_REGI") {
+      router.push("/position-regi");
+    } else if (selectType === "DATE_REGI") {
+      router.push("/date-regi");
+    } else if (selectType === "OTHERS") {
+      router.push("/others");
+    }
+  };
+
   return (
     <Box color="blue.400">
-      <HStack w="100%" spacing="0">
+      <HStack w="100%" spacing="0" onClick={() => handleClick()}>
         <Icon as={iconPath} w="20%" />
         <Text w="80%" fontSize="xs">
           {title}
