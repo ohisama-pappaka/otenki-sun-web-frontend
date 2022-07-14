@@ -1,5 +1,6 @@
 import React from "react";
 import { HStack } from "@chakra-ui/react";
+
 import { SelectButton } from "../SelectButton/index";
 // FIXME: 絶対パスで指定するとうまくいかない
 // import { SelectButton } from "@/components/footer/SelectButton/index";

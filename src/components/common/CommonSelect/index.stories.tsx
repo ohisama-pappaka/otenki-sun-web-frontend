@@ -1,5 +1,8 @@
 import type { Meta, Story } from "@storybook/react/types-6-0";
+import { useState } from "react";
 import { CommonSelect } from "./index";
+
+const [data, setData] = useState<string>("");
 
 export default {
   component: CommonSelect,
@@ -15,6 +18,7 @@ const Template: Story = ({ placeholderData, selectDataList }) => (
   <CommonSelect
     placeholderData={placeholderData}
     selectDataList={selectDataList}
+    setSelectedData={setData}
   />
 );
 

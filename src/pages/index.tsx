@@ -1,18 +1,35 @@
 import React from "react";
-import { Button } from "@chakra-ui/react";
+import { useBreakpointValue } from "@chakra-ui/react";
 
-import { useAuth } from "@/hooks/useAuth";
+import { VSpacer } from "@/components/common/Spacer/VSpacer";
+import { Header } from "@/components/header/Header";
+import { Footer } from "@/components/footer/Footer";
+import { DailyWeatherCard } from "@/components/daily-weather-card/DailyWeatherCard";
+import { Headline } from "@/components/home/Headline";
+import { Pc } from "@/components/pc";
 
 const Home = () => {
-  const { login } = useAuth();
+  const mediaType = useBreakpointValue({ base: "phone", sm: "pc" });
 
-  return (
-    <>
-      {/* TODO: ログイン機能の確認用ボタンのため後に削除 */}
-      <Button onClick={login} colorScheme="blue">
-        Login
-      </Button>
-    </>
+  return mediaType === "phone" ? (
+    <div>
+      <Header headerText={"ホーム"} />
+      <VSpacer size={2} />
+      <DailyWeatherCard
+        weather={"晴れ"}
+        weatherIconUrl={"http://openweathermap.org/img/w/04d.png"}
+        maxTemperature={"30"}
+        minTemperature={"-40"}
+      />
+      <VSpacer size={2} />
+      <Headline headlineTitle={"週間天気"} />
+      <VSpacer size={2} />
+      <Headline headlineTitle={"予定日の天気"} />
+      <VSpacer size={2} />
+      <Footer />
+    </div>
+  ) : (
+    <Pc />
   );
 };
 

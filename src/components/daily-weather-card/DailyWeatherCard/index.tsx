@@ -26,6 +26,7 @@ export const DailyWeatherCard = ({
       borderRadius="md"
       borderWidth="2px"
       textAlign="center"
+      margin="auto"
     >
       <VSpacer size={2} />
       <Text fontSize="xl">{weather}</Text>
