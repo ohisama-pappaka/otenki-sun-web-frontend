@@ -7,7 +7,7 @@ import { BsCheck } from "react-icons/bs";
 import { AiFillQuestionCircle } from "react-icons/ai";
 import { IconType } from "react-icons/lib";
 
-import { FooterSelectButtonType } from "@/types/type";
+import { FooterSelectButtonType } from "@/types/types";
 
 export const SelectButton = ({ selectType }: FooterSelectButtonType) => {
   const router = useRouter();

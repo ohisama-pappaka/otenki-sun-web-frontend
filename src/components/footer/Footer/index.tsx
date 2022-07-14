@@ -4,7 +4,7 @@ import { HStack } from "@chakra-ui/react";
 import { SelectButton } from "../SelectButton/index";
 // FIXME: 絶対パスで指定するとうまくいかない
 // import { SelectButton } from "@/components/footer/SelectButton/index";
-import { FooterSelectButtonType } from "@/types/type";
+import { FooterSelectButtonType } from "@/types/types";
 
 export const Footer = () => {
   const selectButtonList: FooterSelectButtonType[] = [
